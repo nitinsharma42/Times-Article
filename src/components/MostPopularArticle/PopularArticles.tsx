@@ -16,7 +16,7 @@ export default function PopularArticles() {
     }
 
     return (
-        <section className={styles.articleSection}>
+        <section className={styles?.articleSection}>
             {<Loader loading={loading}/>}
             {data?.results?.length && <ArticleTitleList articles={data.results}/>}
         </section>

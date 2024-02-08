@@ -1,30 +1,53 @@
-# React + TypeScript + Vite
+# Times Article
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Times Article is a React application for viewing popular articles. It fetches data from an API and displays a list of articles along with their details.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run the Times Article application locally, follow these steps:
 
-## Expanding the ESLint configuration
+1. Clone the repository:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+    ```bash
+    git clone https://github.com/nitinsharma42/Times-Article.git
+    ```
 
-- Configure the top-level `parserOptions` property like this:
+2. Navigate to the project directory:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+    ```bash
+    cd times-article
+    ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+4. Create a `.env` file in the root directory and define environment variables as needed. You can copy the `.env.example` file and customize it.
+
+5. Start the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+6. Open your browser and navigate to `http://localhost:3000` to view the application.
+
+## Scripts
+
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the project for production.
+- `npm run lint`: Lints the code using ESLint.
+- `npm run preview`: Starts the preview server.
+- `npm test`: Runs tests using Jest.
+- `npm run coverage`: Runs tests with coverage analysis.
+
+## Technologies Used
+
+- React
+- TypeScript
+- Vite
+- Jest
+- ESLint
+- React Testing Library
