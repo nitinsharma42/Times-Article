@@ -1,0 +1,19 @@
+.articleList {
+    list-style: none;
+}
+
+.articleListItem {
+    padding: 1rem 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.articleListContainer {
+    padding-right: 1rem;
+    border-right: 1px solid #000;
+}
+
+.activeListItem {
+    background-color: #000;
+    color: #fff;
+}
