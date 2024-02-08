@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import ArticleTitleList from "../components/MostPopularArticle/ArticleTitleList";
-import { Article } from "../types/PopularArticle";
+import ArticleTitleList from "../TitleList";
+import { Article } from "../../../types/PopularArticle";
 import '@testing-library/jest-dom';
 
 describe("ArticleTitleList", () => {

@@ -30,7 +30,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "identity-obj-proxy": "^3.0.0",
-    "msw": "^2.1.7",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.2.2",

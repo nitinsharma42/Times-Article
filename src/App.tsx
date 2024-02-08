@@ -1,6 +1,6 @@
 import './App.css'
 import Header from './components/Header/Header'
-import PopularArticles from './components/MostPopularArticle/PopularArticles'
+import PopularArticles from './page/article/Articles'
 
 function App() {
   return (

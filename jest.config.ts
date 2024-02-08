@@ -1,6 +1,6 @@
 export default {
     preset: 'ts-jest',
-    testEnvironment: './jest-environment.ts',
+    testEnvironment: 'jest-environment-jsdom',
     testEnvironmentOptions: {
         customExportConditions: [''],
       },

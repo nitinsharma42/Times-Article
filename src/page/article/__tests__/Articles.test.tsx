@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import PopularArticles from '../components/MostPopularArticle/PopularArticles';
+import PopularArticles from '../Articles';
 import '@testing-library/jest-dom';
 
 //Mocking useFetchArticle hook
-jest.mock('../hooks/useFetchArticle', () => ({
+jest.mock('../../../hooks/useFetchArticle', () => ({
   __esModule: true,
   default: jest.fn(() => ({
     data: { results: [{ id: 1, title: 'Article 1' }] },
@@ -13,8 +13,9 @@ jest.mock('../hooks/useFetchArticle', () => ({
 }));
 
 describe('PopularArticles', () => {
-  it('renders loader when loading is true', () => {
-    require('../hooks/useFetchArticle').default.mockImplementation(() => ({
+  it('renders loader when loading is true', async () => {
+    const mockUseFetchArticle = (jest.requireMock('../../../hooks/useFetchArticle').default as jest.Mock)
+    mockUseFetchArticle.mockImplementation(() => ({
       data: { results: [] },
       error: null,
       loading: true
@@ -25,7 +26,8 @@ describe('PopularArticles', () => {
 
   it('renders error message when there is an error', () => {
     // Mock useFetchArticle hook to return an error message
-    require('../hooks/useFetchArticle').default.mockImplementation(() => ({
+    const mockUseFetchArticle = (jest.requireMock('../../../hooks/useFetchArticle').default as jest.Mock)
+    mockUseFetchArticle.mockImplementation(() => ({
       data: { results: [] },
       error: 'Error message',
       loading: false
@@ -36,7 +38,8 @@ describe('PopularArticles', () => {
 
   it('renders article list when data is fetched successfully', () => {
     // Mock useFetchArticle hook to return article data
-    require('../hooks/useFetchArticle').default.mockImplementation(() => ({
+    const mockUseFetchArticle = (jest.requireMock('../../../hooks/useFetchArticle').default as jest.Mock)
+    mockUseFetchArticle.mockImplementation(() => ({
       data: { results: [{ id: 1, title: 'Test Title 1' }] },
       error: null,
       loading: false

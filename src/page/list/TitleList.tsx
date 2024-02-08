@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Article } from "../../types/PopularArticle"
-import styles from "./ArticleTitleList.module.css";
-import ArticleDetail from "./ArticleDetail";
+import styles from "./TitleList.module.css";
+import ArticleDetail from "../detail/Detail";
 
 type ArticleListProps = {
     articles : Article[]
 }
 
-export default function ArticleTitleList({ articles } : ArticleListProps) {
+export default function TitleList({ articles } : ArticleListProps) {
     const [selectedArticle, setSelectedArticle] = useState<Partial<Article>>(articles[0]);
     const handleArticleClick = (article : Article) => {
         setSelectedArticle(article);

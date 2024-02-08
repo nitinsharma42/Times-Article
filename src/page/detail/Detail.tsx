@@ -1,10 +1,10 @@
 import { Article } from "../../types/PopularArticle";
-import styles from "./ArticleDetail.module.css";
+import styles from "./Detail.module.css";
 
 type ArticleDetailProps = {
     selectedArticle: Partial<Article>
 }
-export default function ArticleDetail({ selectedArticle } : ArticleDetailProps) {
+export default function Detail({ selectedArticle } : ArticleDetailProps) {
     const src = selectedArticle?.media?.[0]?.["media-metadata"]?.[2]?.url;
     return (
         <article className={styles?.articleDetails}>

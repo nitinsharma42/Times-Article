@@ -1,7 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import ArticleDetail from "../components/MostPopularArticle/ArticleDetail";
-import { Article } from "../types/PopularArticle";
-//import { useFetchArticle } from "../hooks/useFetchArticle";
+import ArticleDetail from "../Detail";
+import { Article } from "../../../types/PopularArticle";
 import '@testing-library/jest-dom';
 
 describe("ArticleDetail", () => {
