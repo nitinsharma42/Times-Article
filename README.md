@@ -32,8 +32,6 @@ To run the Times Article application locally, follow these steps:
     npm run dev
     ```
 
-6. Open your browser and navigate to `http://localhost:3000` to view the application.
-
 ## Scripts
 
 - `npm run dev`: Starts the development server.
@@ -42,6 +40,7 @@ To run the Times Article application locally, follow these steps:
 - `npm run preview`: Starts the preview server.
 - `npm test`: Runs tests using Jest.
 - `npm run coverage`: Runs tests with coverage analysis.
+- `npm run sonar`: Runs sonarscanner and generate the report.
 
 ## Technologies Used
 
@@ -51,3 +50,14 @@ To run the Times Article application locally, follow these steps:
 - Jest
 - ESLint
 - React Testing Library
+
+## Architecture Design
+
+- Use PageUI React architecture to implement the feature to show most popular articles from NY Times. THe folder structure we have used:
+
+    - components - contain the common components such as Loader and Header
+    - hooks - contain custom hook useFetchArticle to fetch the articles data
+    - page - contain the View to display the article list and details
+    - types - contain the interface and type for type checking
+    - icons - contain the icons used in the application.
+
