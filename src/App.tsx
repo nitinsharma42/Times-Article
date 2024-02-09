@@ -4,7 +4,7 @@ import PopularArticles from './page/article/Articles'
 
 function App() {
   return (
-    <main>
+    <main className='App'>
       <Header />
       <PopularArticles />
     </main>

@@ -2,3 +2,16 @@
   text-align: center;
   margin: 0;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    overflow: scroll;
+  }
+}

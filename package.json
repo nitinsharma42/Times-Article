@@ -9,7 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "sonar": "sonar-scanner -Dsonar.projectKey=times-article -Dsonar.sources=. -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqp_89111c1ce748bf1cebbfc79e55e5270d200d8c92"
   },
   "dependencies": {
     "dotenv": "^16.4.1",
@@ -30,6 +31,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "identity-obj-proxy": "^3.0.0",
+    "sonarqube-scanner": "^3.3.0",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.2.2",

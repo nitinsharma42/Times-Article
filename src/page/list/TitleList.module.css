@@ -3,7 +3,7 @@
 }
 
 .articleListItem {
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
     cursor: pointer;
     font-weight: bold;
 }
@@ -11,9 +11,18 @@
 .articleListContainer {
     padding-right: 1rem;
     border-right: 1px solid #000;
+    max-height: 100vh;
+    overflow: scroll;
 }
 
 .activeListItem {
-    background-color: #000;
+    background-color: var(--black-text);
     color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .articleListContainer {
+        max-height: fit-content;
+        overflow: unset;
+    }
 }
