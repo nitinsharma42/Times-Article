@@ -1,11 +1,13 @@
 .articleList {
     list-style: none;
+    text-align: left;
 }
 
 .articleListItem {
     padding: 1rem 0.5rem;
     cursor: pointer;
     font-weight: bold;
+    border-bottom: 1px solid;
 }
 
 .articleListContainer {
@@ -20,9 +22,56 @@
     color: #fff;
 }
 
+.iconWrapper {
+    z-index: 101;
+    position: absolute;
+    transform: translateY(-20px);
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .articleListContainer {
-        max-height: fit-content;
-        overflow: unset;
+        width: 30%;
+        position: absolute;
+        z-index: 100;
+        background-color: #fff;
+        animation-duration: 0.3s;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
     }
+
+    .isOpen {
+        animation-name: drawerOpen;
+    }
+
+    .isHidden {
+        animation-name: drawerClose;
+    }
+
+    @keyframes drawerOpen {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(0%);
+            /* Final position of the drawer */
+        }
+    }
+
+    @keyframes drawerClose {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    .iconWrapper {
+        display: block;
+    }
+
+
 }
