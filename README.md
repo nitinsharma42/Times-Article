@@ -60,10 +60,4 @@ To run the Times Article application locally, follow these steps:
     - page - contains the View to display the article list and details
     - types - contain the interface and type for type-checking
     - icons - contain the icons used in the application.
-Mobile Screenshot:
-<img width="600" alt="Screenshot 2024-02-09 at 3 18 33 PM" src="https://github.com/nitinsharma42/Times-Article/assets/83276693/15b2ba59-33b9-406f-abd0-ebe07532afb2">
-
-Desktop Screenshot:
-<img width="1440" alt="Screenshot 2024-02-09 at 3 18 13 PM" src="https://github.com/nitinsharma42/Times-Article/assets/83276693/35878fa4-2c89-4d46-a3a7-77bf09bbb005">
-
 
