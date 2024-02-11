@@ -53,11 +53,11 @@ To run the Times Article application locally, follow these steps:
 
 ## Architecture Design
 
-- Use PageUI React architecture to implement the feature to show most popular articles from NY Times. THe folder structure we have used:
+- Use PageUI React architecture to implement the feature to show the most popular articles from the NY Times. The folder structure we have used:
 
     - components - contain the common components such as Loader and Header
-    - hooks - contain custom hook useFetchArticle to fetch the articles data
-    - page - contain the View to display the article list and details
-    - types - contain the interface and type for type checking
+    - hooks - contain custom hook useFetchArticle to fetch the article's data
+    - page - contains the View to display the article list and details
+    - types - contain the interface and type for type-checking
     - icons - contain the icons used in the application.
 
