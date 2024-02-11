@@ -1,7 +1,7 @@
 import useFetchArticle from "../../hooks/useFetchArticle";
 import { ArticleResponse } from "../../types/PopularArticle";
 import Loader from "../../components/Loader/Loader";
-import ArticleTitleList from "../list/TitleList";
+import ArticleTitleList from "../List/TitleList";
 import styles from "./Articles.module.css";
 
 export default function Articles() {

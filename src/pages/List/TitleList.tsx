@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Article } from "../../types/PopularArticle";
 import styles from "./TitleList.module.css";
-import ArticleDetail from "../detail/Detail";
+import ArticleDetail from "../Detail/Detail";
 import Hamburger from "../../Icons/HamburgerIcon";
 
 type ArticleListProps = {

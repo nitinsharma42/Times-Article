@@ -5,13 +5,14 @@ type ArticleDetailProps = {
     selectedArticle: Partial<Article>
 }
 export default function Detail({ selectedArticle } : ArticleDetailProps) {
-    const src = selectedArticle?.media?.[0]?.["media-metadata"]?.[2]?.url;
+    const src = selectedArticle?.media?.[0]?.["media-metadata"]?.[2]?.url || "/images/default-image.avif";
+
     return (
         <article className={styles?.articleDetails}>
         {selectedArticle && (
             <>
             <h3>{selectedArticle.title}</h3>
-            <img src={src} alt={selectedArticle.type}/>
+            <img src={src} alt={selectedArticle.type} width={450} height={300}/>
             <span className={styles?.articleByline}>
                 <p>{selectedArticle.byline}</p>
                 {selectedArticle.published_date && (
