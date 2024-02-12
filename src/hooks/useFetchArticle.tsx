@@ -20,7 +20,7 @@ export default function useFetchArticle() {
         setError(err);
         setLoading(false);
       });
-  }, []);
+  }, [url]);
 
   return { data, error, loading };
 }

@@ -10,8 +10,5 @@ export default {
     },
     moduleNameMapper: {
         "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"
-    },
-    setupFilesAfterEnv: [
-        "<rootDir>/setupTests.ts"
-      ]
+    }
 }

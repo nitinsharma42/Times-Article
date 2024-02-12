@@ -25,6 +25,7 @@ export default function TitleList({ articles }: ArticleListProps) {
       <span
         className={styles?.iconWrapper}
         onClick={handleIconClick}
+        data-testid="hamburger"
       >
         <Hamburger />
       </span>

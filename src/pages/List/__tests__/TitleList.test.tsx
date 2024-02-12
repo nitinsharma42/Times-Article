@@ -36,5 +36,16 @@ describe("ArticleTitleList", () => {
         expect(screen.getAllByText("Test Title 2")).toHaveLength(2);
         expect(screen.getAllByText("Test Title 1")).toHaveLength(1)
     });
+
+    it('title section is hidden for small devices', () => {
+        render(<ArticleTitleList articles={articles} />);
+        const hamburger = screen.queryByTestId('hamburger');
+        if (hamburger) {
+            fireEvent.click(hamburger);
+            expect(screen.getAllByText("Test Title 1")).toHaveLength(2);
+        } else {
+            fail('Hamburger icon not found');
+        }
+    })
 })
 
